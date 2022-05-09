@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>challenge 1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>	
+<header>
+	<img src="logo.svg" alt="a">
+</header>
+<main class="contenedor">
+	<section>
+		<div class="contenido">	
+		    <textarea type="text" id="entrada" class="entrada" cols="40" rows="14" class="texto2" placeholder="Ingrese el texto aqui"></textarea>	
+			<!--<input class="entrada" type="text" name="decodifica" id="ingrese" placeholder="ingrese texto aqui ">-->
+			<div class="leer">
+				<img id="imgpnp" src="Vector.png">
+				<h3>solo letras minusculas y sin acentos</h3>
+			</div>
+		</div>	
+		<div class="bottom">
+			<div class="boton1">
+				<button class="aboton" onclick="btnencriptar()"> Encriptar </button>
+			</div>
+			<div class="boton2">
+				<button class="bboton" onclick="btndesencriptar()"> Desencriptar </button>
+			</div>
+		</div>
+	</section>  
+	<aside class="sidebar">
+		<div id="myDiv" style="display: block;">
+			<img class="chico" src="imgboy.svg" alt="chico con lupa">
+		</div>
+		<textarea disabled="true" id="textoCopy" type="text" cols="40" rows="8" class="texto" placeholder="Ningun mensaje fue encontrado"></textarea>
+		<h3>Ingrese el texto que deseas encriptar o desencriptar.</h3>
+		<div class="boton3">
+			<button style="display:none; margin-top: 50px;" id="botonC" class="cboton"> copiar </button>
+		</div>
+	</aside> 
+</main>
+<script src="script.js"></script>
+</body>
+</html>

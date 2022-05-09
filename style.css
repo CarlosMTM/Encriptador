@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	background: #F3F5FC;
+	color: #495057;
+	font-family:'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 100%;
+}
+header{
+	position: absolute;
+}
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	
+}
+.contenedor > div,
+.contenedor .header,
+.contenedor .sidebar{
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 32px;
+}
+.contenedor .sidebar {
+	text-align: center;
+	height: 480px;
+}
+
+.contenedor .boton1,
+.contenedor .boton2{
+	background: #F3F5FC;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: flex;
+	
+
+}
+.entrada{
+	background: #F3F5FC;
+	color: #0A3871;
+	width: 480px;
+	height: 244px;
+	outline: 0;
+	border: 0;
+	text-align: center;
+	padding-top: 140px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+
+}
+.texto{
+	background: #ffffff;
+	color: #495057;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	border: 0;
+	
+}
+.leer{
+	display: flex;
+	height: 20px;
+	font-size: 12px;
+
+}
+#imgpnp{
+	height: auto;
+	width: auto;
+	max-width: 12px;
+	max-height: 12px;
+	margin: 2px;
+
+}
+.chico{
+	width: 200px;
+	height: 220px;
+}
+.aboton{
+	background-color: #0A3871;
+	border-color: #0A3871;
+	border-width: 1px;
+	border-radius: 24px;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 16px;
+	width: 300px;
+	height: 67px;
+	margin: 5px;
+
+	
+}
+.bboton{
+	background-color: #F3F5FC;
+	border-color: #0A3871;
+	border-width: 1px;
+	border-radius: 24px;
+	color: #0A3871;
+	font-weight: 400;
+	font-size: 16px;
+	width: 300px;
+	height: 67px;
+	margin: 5px;
+}
+.bottom{
+display: flex;
+
+}
+.cboton{
+	background-color: #FFFFFF;
+	border-color: #0A3871;
+	border-width: 1px;
+	border-radius: 24px;
+	color: #0A3871;
+	font-weight: 400;
+	font-size: 16px;
+	width: 300px;
+	height: 67px;
+	margin: 5px;
+}
+@media (max-width: 768px){
+	/*.contenedor .contenido {
+		grid-column: 1/ -1;screen and
+	}*/
+	.entrada{
+		width: 350px;
+	}
+	.contenedor .sidebar{
+		grid-column: 1/ -1;
+		height: 183px;
+		width: 560px;
+	}
+	.chico{
+		display: none;
+	}
+}
+@media (max-width: 428px){
+	.entrada{
+		width: 250px;
+	}
+	.contenedor .sidebar{
+		height: 283px;
+		width: 260px;
+	}
+	.texto{
+		width: 200px;
+	}
+	.bottom{
+		display: block;
+	}
+}
+
+
+#myDIV
+{
+	display: block;
+}
+
+.aboton:hover
+{
+	cursor: pointer;
+}
+
+.bboton:hover
+{
+	cursor: pointer;
+}
+
+.cboton:hover
+{
+	cursor: pointer;
+	border: dashed 3px;
+}
